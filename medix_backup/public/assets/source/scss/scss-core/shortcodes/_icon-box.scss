@@ -1,0 +1,520 @@
+/*
+ * Shortcode: Icon Boxes
+ * -----------------------------------------------
+*/
+.icon-box {
+	$icon-box: &;
+	position: relative;
+	//margin-bottom: 30px;
+	@include transition(all .3s ease);
+
+	.icon {
+		$icon: &;
+		display: inline-block;
+		height: 70px;
+		margin-bottom: 15px;
+		@include transition(all .3s ease);
+		width: 70px;
+		text-align: center;
+		font-weight: normal;
+
+		i {
+			display: inline-block;
+			font-size: 40px;
+			line-height: 70px;
+		}
+
+		i[class*="pe-7s-"] {
+			vertical-align: text-bottom;
+		}
+
+		// Icon Default
+		&.icon-default {
+			height: auto;
+			width: auto;
+			margin-bottom: 5px;
+			i {
+				line-height: 1;
+			}
+		}
+
+		// Icon gray
+		&.icon-gray {
+			background-color: $gray-eee;
+			color: $black-333;
+
+			//icon bordered
+			&.icon-bordered {
+				background-color: transparent;
+				border: 3px solid $gray-eee;
+
+			}
+			
+			@at-root {
+				#{$icon-box}:hover .icon {
+					&.icon-gray {
+						background-color: darken($gray-eee, 10%);
+						color: $black-111;
+
+						//icon bordered
+						&.icon-bordered {
+							background-color: $gray-eee;
+							color: $black-555;
+						}
+					}
+				}
+			}
+		}
+
+		// Icon dark
+		&.icon-dark {
+			background-color: $black-111;
+			color: $white-base;
+
+			//icon bordered
+			&.icon-bordered {
+				background-color: transparent;
+				border: 3px solid $black-111;
+				color: $black-111;
+			}
+			
+			@at-root {
+				#{$icon-box}:hover .icon {
+					&.icon-dark {
+						background-color: $gray-eee;
+						color: $black-111;
+
+						//icon bordered
+						&.icon-bordered {
+							background-color: $black-111;
+							border-color: $black-111;
+							color: $white-base;
+						}
+					}
+				}
+			}
+		}
+
+		// Icon dark
+		&.icon-white {
+			background-color: $white-base;
+			color: $black-333;
+
+			//icon bordered
+			&.icon-bordered {
+				background-color: transparent;
+				border: 3px solid $white-base;
+			}
+			
+			@at-root {
+				#{$icon-box}:hover .icon {
+					&.icon-white {
+						background-color: darken($white-base, 20%);
+						color: darken($black-333, 20%);
+
+						//icon bordered
+						&.icon-bordered {
+							background-color: $white-base;
+							border-color: $white-base;
+							color: $black-111;
+						}
+					}
+				}
+			}
+
+			// Icon white border effect
+			&.icon-border-effect {
+				position: relative;
+
+				&::after {
+					box-shadow: 0 0 0 3px $white-base;
+				}
+			}
+		}
+
+		// Icon bordered
+		&.icon-bordered {
+			border: 3px solid $gray-eee;
+			
+			@at-root {
+				#{$icon-box}:hover .icon {
+					&.icon-bordered {
+						background-color: $gray-eee;
+						color: $black-111;
+					}
+				}
+			}
+		}
+
+		// Icon rounded
+		&.icon-rounded {
+			border-radius: 3px;		
+		}
+
+		// Icon rounded
+		&.icon-circled {
+			border-radius: 50%;
+		}
+
+		//icon type iamge
+		&.icon-type-image {
+			&.icon-bordered {
+				padding: 5px;
+			}
+		}
+
+		// Icon xs
+		&.icon-xs {
+			height: 30px;
+			width: 30px;
+
+			i {
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+
+		// Icon sm
+		&.icon-sm {
+			height: 50px;
+			width: 50px;
+
+			i {
+				font-size: 22px;
+				line-height: 50px;
+			}
+		}
+
+		// Icon md
+		&.icon-md {
+			height: 75px;
+			width: 75px;
+
+			i {
+				font-size: 36px;
+				line-height: 75px;
+			}
+		}
+
+		// Icon lg
+		&.icon-lg {
+			height: 90px;
+			width: 90px;
+
+			i {
+				font-size: 48px;
+				line-height: 90px;
+			}
+		}
+
+		// Icon xl
+		&.icon-xl {
+			height: 120px;
+			width: 120px;
+
+			i {
+				font-size: 60px;
+				line-height: 120px;
+			}
+		}
+
+		// Icon border effect
+		&.icon-border-effect {
+			position: relative;
+
+			&::after {
+				border-radius: 50%;
+				box-shadow: 0 0 0 3px ;
+				box-sizing: content-box;
+				content: "";
+				height: 100%;
+				left: -4px;
+				opacity: 0;
+				padding: 4px;
+				top: -4px;
+				transform: scale(0.8);
+				transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+			}
+
+			&.effect-flat {
+				&::after {
+					border-radius: 0;
+				}
+			}
+
+			&.effect-rounded {
+				&::after {
+					border-radius: 3px;
+				}
+			}
+
+			&.effect-circled {
+				&::after {
+					border-radius: 50%;
+				}
+			}
+			// Icon gray
+			&.icon-gray {
+				&::after {
+					box-shadow: 0 0 0 3px $gray-lighter;
+				}
+			}
+		}
+
+		// Icon border effect
+		&.icon-top {
+			left: 0;
+			margin: 0 auto;
+			position: absolute;
+			right: 0;
+			top: -32px;
+		}
+	}
+
+
+	//icon image type alignment
+	.icon {
+		&.icon-type-image {
+			display: block;
+			text-align: left;
+		}
+	}
+	&.text-center {
+		.icon {
+			&.icon-type-image {
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}
+	&.text-right {
+		.icon {
+			&.icon-type-image {
+				text-align: right;
+				display: inline-block;
+			}
+		}
+	}
+
+	// iconbox border
+	&.iconbox-border {
+		border: 3px solid $gray-gainsboro;
+	}
+
+	// iconbox bg
+	&.iconbox-bg {
+		background-color: $white-fa;
+
+		&.iconbox-bg-dark {
+			background-color: $black-333;
+		}
+	}
+
+	&.icon-left {
+		.icon {
+			float: left;
+			margin-right: 20px;
+			@include media-breakpoint-down(lg) {
+				float: none !important;
+				margin-right: 0;
+			}
+			&.no-bg {
+				width: auto;
+				height: auto;
+			}
+		}
+		.icon-text {
+			overflow: hidden;
+		}
+	}
+
+	&.icon-right {
+		.icon {
+			float: right;
+			margin-left: 20px;
+			@include media-breakpoint-down(lg) {
+				float: none !important;
+				margin-left: 0;
+			}
+			&.no-bg {
+				width: auto;
+				height: auto;
+			}
+		}
+		.icon-text {
+			overflow: hidden;
+		}
+	}
+
+	.icon-box-title,
+	.icon-box-title a {
+		@include transition(all .1s ease);
+	}
+	.btn-view-details {
+		@include transition(all .1s ease);
+		margin-top: 20px;
+	}
+
+	&:hover {
+		.icon-border-effect {
+			&::after {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+
+	.icon-border-effect {
+		&:hover {
+			&::after {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+
+	&.iconbox-box-shadow {
+		@include box-shadow( 0px 0px 50px rgba(5, 5, 5, 0.08) );
+		&:hover {
+			@include box-shadow( 0px 0px 50px rgba(5, 5, 5, 0.15) );
+		}
+	}
+
+	&.iconbox-default-padding {
+		padding: 40px 25px 40px 25px;
+	}
+
+	&.iconbox-centered-in-responsive {
+		@include media-breakpoint-down(lg) {
+			text-align: center !important;
+			.icon {
+				&.icon-type-image {
+					text-align: center !important;
+				}
+			}
+		}
+	}
+
+	&.iconbox-title-mt-0-desktop {
+		.icon-box-title {
+			@include media-breakpoint-up(xl) {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&.icon-position-icon-top {
+		&.hanging-icon-top {
+			.icon-wrapper {
+				.icon {
+					margin-top: -70px;
+				}
+			}
+		}
+	}
+
+	&.icon-area-box-shadow {
+		.icon-wrapper {
+			.icon {
+				@include box-shadow( 0px 0px 50px rgba(5, 5, 5, 0.08) );
+			}
+		}
+	}
+
+	&.iconbox-style1-current-theme-animation {
+	}
+
+	&.iconbox-style2-border-bottom {
+		&:after {
+			background-color: #aaa; 
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			content: '';
+			opacity: 0;
+			transition: 0.3s ease-in;
+		}
+		&:hover {
+			&:after {
+				bottom: 0;
+				opacity: 1;
+			}
+		}
+	}
+
+	&.iconbox-style3-moving-border-bottom {
+		overflow: hidden;
+		&:after {
+			position: absolute;
+			left: -2px;
+			bottom: 0px;
+			width: 100%;
+			height: 4px;
+			content: '';
+			background-image: -moz-linear-gradient(0deg, #313131 0%, #bdc0c3 100%);
+			background-image: -webkit-linear-gradient(0deg, #313131 0%, #bdc0c3 100%);
+			background-image: -ms-linear-gradient(0deg, #313131 0%, #bdc0c3 100%);
+			-ms-transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+			visibility: hidden;
+			opacity: 0;
+			@include transition(all 0.5s ease-in);
+		}
+
+		&:hover:after {
+			-ms-transform: translateX(0%);
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%);
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+}
+
+.tm-features-icon-box {
+	padding: 30px;
+	background-color: #fff;
+	border: 1px solid #eee;
+	overflow: hidden;
+	position: relative;
+	transition: 300ms;
+	&:after {
+		content: "\f0ac";
+		position: absolute;
+		top: 25px;
+		font-family: FontAwesome;
+		line-height: 1;
+		opacity: 0.05;
+		right: -10px;
+		font-size: 20em;
+		transition: 300ms;
+		transform: rotate(40deg);
+	}
+	&:hover {
+		box-shadow: 0px 3px 20px 3px #eee;
+		&:after {
+			font-size: 21em;
+			transform: rotate(45deg);
+			right: -10px;
+			opacity: 0.08;
+		}
+	}
+}
+
+
+body {
+	&.tm-dark-layout {
+		.icon-box {
+			&.iconbox-style1-current-theme-animation {
+				background-color: $dark-layout-default-bg-color;
+			}
+		}
+	}
+}

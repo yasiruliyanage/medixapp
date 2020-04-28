@@ -1,0 +1,17 @@
+/*
+ * shop-single.scss
+ * -----------------------------------------------
+*/
+.woocommerce {
+	div.product {
+		.woocommerce-tabs {
+			.wc-tabs {
+				li {
+					&.active {
+						border-bottom-color: $theme-color1;
+					}
+				}
+			}
+		}
+	}
+}

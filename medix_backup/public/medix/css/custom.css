@@ -1,0 +1,30 @@
+.test-covid{
+    background-image: linear-gradient(to right, #f58a94, #dc3545, #dc3545);
+}
+
+@media (max-width: 767px) {
+    .loginBtn-wrap {
+        margin: 15px auto 0 auto;
+    }
+
+    .btn_2 {
+        padding: 5px 24px;
+        margin: 0 auto;
+    }
+
+    .test-covid{
+        margin-left: 0 !important;
+        margin-top: 12px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .btn_2 {
+        padding: 5px 38px;
+    }
+}

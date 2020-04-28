@@ -1,0 +1,83 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+ 
+ 
+/*==========  Mobile First Method  ==========*/
+ 
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+ 
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) {
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+}
+
+
+/*==========  minimum and maximum breakpoint Method  ==========*/
+@include media-breakpoint-only(lg) {
+	body {	font-size: 15px; }
+	h1 { font-size:3em; }		/* 39px */
+	h2 { font-size:2.3077em; }	/* 30px */
+	h3 { font-size:1.8461em; }	/* 24px */
+	h4 { font-size:1.3846em; }	/* 18px */
+	h5 { font-size:1.2308em; }	/* 16px */
+	h6 { font-size:1em; }		/* 13px */
+}
+
+@include media-breakpoint-only(md) {
+	body {	font-size: 15px; }
+	h1 { font-size:3em; }		/* 39px */
+	h2 { font-size:2.3077em; }	/* 30px */
+	h3 { font-size:1.8461em; }	/* 24px */
+	h4 { font-size:1.3846em; }	/* 18px */
+	h5 { font-size:1.2308em; }	/* 16px */
+	h6 { font-size:1em; }		/* 13px */
+}
+@include media-breakpoint-down(sm) {
+	body {	font-size: 15px; }
+	h1 { font-size:2.5em; }		/* 30px */
+	h2 { font-size:2em; }		/* 24px */
+	h3 { font-size:1.6667em; }	/* 20px */
+	h4 { font-size:1.3333em; }	/* 16px */
+	h5 { font-size:1.1667em; }	/* 14px */
+	h6 { font-size:1em; }		/* 12px */
+}
+
+
+//@include media-breakpoint-only(xs) {
+//	body {	font-size: 12px; }
+//	h1 { font-size:2.5em; }
+//	h2 { font-size:2em; }
+//	h3 { font-size:2em; }
+//	h4 { font-size:1.3333em; }
+//	h5 { font-size:1.1667em; }
+//	h6 { font-size:1em; }
+//}

@@ -1,0 +1,17 @@
+/*
+ * charitable-campaigns.scss
+ * -----------------------------------------------
+*/
+.widget {
+	&.widget_charitable_campaigns_widget {
+		.campaign-title {
+			a {
+				font-size: 14px;
+			}
+		}
+		.campaign-time-left {
+			color: #777;
+			font-size: 0.875rem;
+		}
+	}
+}

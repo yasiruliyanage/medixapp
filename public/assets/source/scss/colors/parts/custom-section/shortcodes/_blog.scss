@@ -1,0 +1,31 @@
+/*
+ * Shortcode: blog.scss
+ * -----------------------------------------------
+*/
+.tm-sc-blog {
+	article {
+		.entry-meta {
+			i, .sl-wrapper .sl-icon svg {
+				color: $theme-color1;
+			}
+		}
+	}
+	&.blog-style4-modern {
+		article {
+			.entry-header {
+				.post-single-meta {
+					background-color: rgba($theme-color1, .80);
+				}
+			}
+		}
+	}
+	&.blog-style6-current-theme {
+		article {
+			.entry-header {
+				.post-single-meta {
+					background-color: rgba($theme-color1, .90);
+				}
+			}
+		}
+	}
+}

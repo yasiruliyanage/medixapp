@@ -1,0 +1,64 @@
+/*
+ * Shortcode: charitable-widgets.scss
+ * -----------------------------------------------
+*/
+.widget.widget_charitable_donation_stats_widget .donation-stats li span {
+	color: $theme-color2;
+}
+
+.widget {
+	&.widget_charitable_donors_widget {
+		.donors-list {
+			.donor {
+				.donor-donation-amount {
+					color: $theme-color1;
+				}
+			}
+		}
+	}
+}
+.widget {
+	&.widget_campaign_creator_widget {
+		.charitable-campaign-creator {
+			.creator-summary {
+				p {
+					color: $theme-color1;
+				}
+			}
+		}
+	}
+}
+.widget {
+	&.widget_charitable_donation_stats_widget {
+		.donation-stats {
+			li {
+				.figure {
+					color: $theme-color1;
+				}
+			}
+		}
+	}
+}
+
+.widget {
+	&.widget_charitable_donate_widget {
+		#charitable-donation-amount-form {
+			.charitable-donation-options {
+				.donation-amounts {
+					.donation-amount {
+						&.selected {
+							.amount {
+								background: $theme-color1;
+							}
+						}
+						&.custom-donation-amount {
+							&.selected {
+								background: $theme-color1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

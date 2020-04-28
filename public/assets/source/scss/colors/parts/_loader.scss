@@ -1,0 +1,17 @@
+// Import bootstrap variables and mixins for reference
+@import "../../scss-bootstrap/functions";
+@import "../../scss-bootstrap/variables";
+@import "../../scss-bootstrap/mixins";
+
+// Initialize Theme Variables
+@import "../../scss-core/variables";
+
+
+
+@import "common";
+@import "theme-color1";
+@import "theme-color2";
+@import "custom-section/loader";
+@import "gradients";
+@import "box-hover-effect";
+@import "../../scss-override-theme-color/loader";

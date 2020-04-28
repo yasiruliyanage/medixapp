@@ -1,0 +1,16 @@
+/*
+ * Shortcode: section-title.scss
+ * -----------------------------------------------
+*/
+.section-title-line-bottom-style1 {
+	position: relative;
+	margin-bottom: 45px !important;
+	&:before {
+		content: "";
+		height: 4px;
+		width: 60px;
+		border-radius: 12px;
+		position: absolute;
+		bottom: -18px;
+	}
+}

@@ -1,0 +1,141 @@
+/*
+ * Shortcode: departments.scss
+ * -----------------------------------------------
+*/
+
+.tm-departments-item {
+	margin-bottom: 40px;
+	.details {
+		.title {
+			margin-top: 15px;
+		}
+	}
+}
+
+.departments .entry-content li,
+.services-tab .service-excerpt li {
+	list-style: outside none none;
+}
+
+.owl-carousel .tm-departments-item {
+	margin-bottom: 30px;
+}
+
+.services-tab .service-excerpt {
+	margin-bottom: 30px;
+}
+
+.services-tab .nav-tabs {
+	border-bottom: 1px solid $white-f1;
+	text-align: center;
+	>li {
+		border-left: 1px solid $gray-lighter;
+		margin-bottom: 0;
+		width: 20%;
+		&:first-child {
+			border-left: none;
+		}
+		>a {
+			background-color: $white-base;
+			color: $gray-darkgray;
+			font-size: 13px;
+			margin-right: 0;
+			padding: 35px 20px;
+			border: none;
+			text-transform: uppercase;
+			i {
+				display: block;
+				font-size: 64px;
+				margin-right: 0;
+				margin-bottom: 10px;
+				vertical-align: middle;
+			}
+			img {
+				margin-bottom: 5px;
+				max-width: 70px;
+			}
+		}
+	}
+}
+
+.services-tab .nav-tabs>li.active>a,
+.services-tab .nav-tabs>li.active>a:hover,
+.services-tab .nav-tabs>li.active>a:focus,
+.services-tab .nav-tabs>li a:hover,
+.services-tab .nav-tabs>li a:focus {
+	color: #fff;
+	border: none;
+}
+
+.services-tab .nav-tabs>li.active>a i,
+.services-tab .nav-tabs>li.active>a:hover i,
+.services-tab .nav-tabs>li.active>a:focus i,
+.services-tab .nav-tabs>li a:hover i,
+.services-tab .nav-tabs>li a:focus i {
+	color: #fff;
+}
+
+.services-tab .tab-content .service-excerpt {
+	.sub-title {
+		color: #c8c8c8;
+		font-family: 'Playfair Display', sans-serif;
+	}
+	.title {
+		color: $black-555;
+		font-family: 'Playfair Display', sans-serif;
+	}
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 30px;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 0 20px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.services-tab .nav.nav-tabs {
+		a {
+			padding: 10px 0;
+			font-size: 9px;
+			i {
+				font-size: 28px;
+				margin-top: 10px;
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+}
+
+
+/* departments-single-wrapper */
+
+.departments-single-wrapper {
+	.departments-content {
+		.thumb {
+			margin-bottom: 20px;
+		}
+	}
+	.list-departments {
+		a.list-group-item,
+		button.list-group-item {
+			&.active,
+			&:focus,
+			&:hover,
+			{
+				background-color: #f5f5f5;
+				color: #555;
+				border: 1px solid #ddd;
+				border-left: 4px solid #ccc;
+				@include transition(all .4s ease);
+			}
+		}
+	}
+	.departments-sidebar {
+		.list-group-item-title {
+			text-transform: uppercase;
+		}
+	}
+}
+

@@ -1,0 +1,20 @@
+/*
+ *  cpt-services.scss
+ * -----------------------------------------------
+*/
+.tm-sc-services {
+	.tm-service {
+		.btn-plain-text {
+			&:after {
+				background: $theme-color1;
+			}
+		}
+		.btn-plain-text-with-arrow {
+			&:focus, &:hover {
+				&:after {
+					color: $theme-color1;
+				}
+			}
+		}
+	}
+}

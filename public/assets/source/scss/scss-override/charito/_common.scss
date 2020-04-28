@@ -1,0 +1,67 @@
+/*
+ * Shortcode: common.scss
+ * -----------------------------------------------
+*/
+
+.tm-sc-pricing-table .pricing-table-inner .pricing-table-title-area {
+	padding-bottom: 15px;
+	padding-top: 0;
+}
+.tm-sc-pricing-table .pricing-table-inner .pricing-table-pricing .pricing-table-price {
+	color: #999;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 45px;
+}
+.contact-info-boxes .icon-box .icon i {
+	line-height: 46px;
+	font-size: 46px;
+}
+.pet .details {
+	margin-bottom: 30px;
+}
+.pet .details .name {
+	margin-top: 16px;
+	font-size: 20px;
+}
+.pet .details .speciality ul {
+	list-style: none;
+}
+.pet .details .speciality ul li {
+	font-size: 14px;
+	padding: 4px 0 4px 0;
+}
+.pet .details .speciality ul li strong {
+	margin-right: 2px;
+}
+.widget-pet.pet-speciality .speciality ul li:before {
+	content: "\f105";
+	font-family: fontAwesome;
+	font: normal normal normal 16px/1 FontAwesome;
+	margin: 0 10px 0px 0;
+	font-weight: 600;
+}
+.widget-pet.pet-speciality .speciality ul li {
+	padding-bottom: 10px;
+	padding-top: 8px;
+	background: #F2F0E9;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	padding-left: 20px;
+}
+.wpb-js-composer .tabs-default-theme-colored1.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active>a {
+	color: #fff;
+}
+.list-style-theme-colored1.list-style-circled li {
+	list-style: none;
+	padding: 0 0 0 20px;
+}
+.list-style-theme-colored1.list-style-circled li:before {
+	content: "\f192";
+	font: normal normal normal 11px/1 FontAwesome;
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	margin: 10px 0 0 15px;
+	font-weight: 600;
+}

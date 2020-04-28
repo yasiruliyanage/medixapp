@@ -1,0 +1,37 @@
+/*
+ * Shortcode: charitable-form.scss
+ * -----------------------------------------------
+*/
+
+.charitable-donation-form {
+	.charitable-donation-options {
+		.donation-amounts {
+			.donation-amount {
+				&.suggested-donation-amount {
+					&.selected {
+						.amount {
+							background-color: $theme-color1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.charitable-submit-field,
+.charitable-form-field {
+	.button {
+		background: $theme-color1;
+		&:hover {
+			background: darken( $theme-color1, 5% );
+		}
+	}
+}
+.charitable-login-form {
+	input[type="submit"] {
+		background: $theme-color1;
+		&:hover {
+			background: darken( $theme-color1, 5% );
+		}
+	}
+}

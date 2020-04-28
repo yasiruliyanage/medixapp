@@ -1,0 +1,179 @@
+/*
+ * owl-carousel.scss
+ * -----------------------------------------------
+*/
+
+.owl-carousel {
+	
+	.tm-carousel-item {
+		transition: .8s;
+		-webkit-transition: .8s;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		opacity: 1;
+		&.__loading {
+			opacity: 0;
+			transform: translateX(40px);
+			-webkit-transform: translateX(40px);
+		}
+	}
+	.owl-item img {
+		display: inline-block;
+		width: auto;
+	}
+
+	/* owl dots */
+	.owl-dots {
+		text-align: center;
+		margin-top: 10px;
+		.owl-dot {
+			display: inline-block;
+			zoom: 1;
+			span {
+				background: #D6D6D6;
+				border-radius: 50%;
+				display: block;
+				height: 12px;
+				margin: 5px 3px;
+				opacity: 0.8;
+				@include transition( all .4s ease 0s);
+				width: 12px;
+			}
+			&.active,
+			&:hover {
+				span {
+					background: #869791;
+				}
+			}
+		}
+	}
+	.owl-nav {
+		button {
+			border-radius: 0;
+			display: block;
+			margin: -25px 0 0 0;
+			position: absolute;
+			opacity: 0.4;
+			top: 50%;
+			z-index: 6;
+			@include transition(all 0.4s ease 0s);
+
+			i {
+				color: #555;
+				vertical-align: middle;
+				font-size: 16px;
+			}
+			&.owl-prev {
+				left: 0;
+				background: rgba(240,240,240,0.8) !important;
+				padding: 10px !important;
+			}
+
+			&.owl-next {
+				right: 0;
+				background: rgba(240,240,240,0.8) !important;
+				padding: 10px !important;
+			}
+		}
+
+	}
+	&:hover {
+		.owl-nav {
+			> button {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.owl-nav-outer {
+	.owl-nav {
+		button {
+			&.owl-prev, &.owl-next {
+				border: 3px solid #aaa;
+				background: rgba(240, 240, 240, 0.8) !important;
+				padding: 10px 15px !important;
+			}
+			&.owl-prev {
+				left: -70px;
+			}
+
+			&.owl-next {
+				right: -70px;
+			}
+			@include media-breakpoint-down(lg) {
+				&.owl-prev {
+					left: -25px;
+				}
+
+				&.owl-next {
+					right: -25px;
+				}
+			}
+		}
+
+	}
+}
+/* Owl Dots	*/
+.owl-dots-bottom-right .owl-dots {
+	bottom: -10px;
+	position: absolute;
+	right: 0;
+}
+.owl-dots-center-bottom .owl-dots {
+	bottom: 15px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+.owl-dots-left {
+	.owl-dots {
+		text-align: left;
+	}
+}
+
+.owl-dots-center {
+	.owl-dots {
+		text-align: center;
+	}
+}
+
+.owl-dots-right {
+	.owl-dots {
+		text-align: right;
+	}
+}
+
+
+.owl-dots-light-skin {
+	.owl-dots {
+		.owl-dot {
+			span {
+				background: #D6D6D6;
+			}
+			&.active,
+			&:hover {
+				span {
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+.owl-dots-dark-skin {
+	.owl-dots {
+		.owl-dot {
+			span {
+				background: #333;
+			}
+			&.active,
+			&:hover {
+				span {
+					background: #000;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+/*
+ * Shortcode: campaign-shortcode.scss
+ * -----------------------------------------------
+*/
+.tm-sc-charitable-campaigns {
+	.charitable-campaign {
+		border: 1px solid rgba(0,0,0,0.1);
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.campaign-inner {
+			background: #fff;
+			.campaign-content {
+				padding: 30px;
+			}
+			.campaign-title {
+				margin-top: 0;
+			}
+
+			.campaign-donation-stats {
+				display: table;
+				width: 100%;
+				font-size: 15px;
+				.donation-raised,
+				.donation-goal {
+					display: table-cell;
+					vertical-align: middle;
+					.progress-title {
+						color: #999;
+						font-size: 14px;
+						font-weight: bold;
+					}
+					.amount {
+						color: #111;
+						display: block;
+						font-size: 16px;
+						font-weight: bold;
+					}
+				}
+				.donation-raised {
+					text-align: left;
+				}
+				.donation-goal {
+					text-align: right;
+				}
+			}
+			.campaign-meta {
+				font-size: 14px;
+				color: #888;
+				margin-bottom: 10px;
+				.each-meta {
+					a {
+						color: #888;
+					}
+					display: inline-block;
+					margin-right: 10px;
+					i {
+						margin-right: 3px;
+					}
+				}
+			}
+			.btn {
+				margin-top: 15px;
+				margin-right: 5px;
+				margin-bottom: 5px;
+			}
+			.charitable-progress-bar {
+				margin-top: 30px;
+				padding: 7px 0;
+				.progress {
+					height: 20px;
+					margin-bottom: 0;
+					overflow: visible;
+					background-color: #f5f5f5;
+					.progress-bar {
+						position: relative;
+						border-radius: 5px;
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

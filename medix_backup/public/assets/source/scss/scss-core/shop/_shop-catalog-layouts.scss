@@ -1,0 +1,55 @@
+/*
+ * shop-catalog-layouts.scss
+ * -----------------------------------------------
+*/
+.woocommerce {
+	.carousel-layout,
+	.isotope-layout {
+		&.products {
+			.product.box-hover-effect {
+				/* effect default */
+				&.effect-default {
+					.product-details {
+						background-color: #fff;
+						border: 1px solid #eee;
+						padding: 15px 20px;
+					}
+				}
+
+				/* effect classic */
+				&.effect-classic {
+					border-radius: 5px;
+					border: 2px solid #eee;
+					.product-details {
+						background-color: #fff;
+						padding: 25px;
+						text-align: center;
+						.product-title {
+							font-size: 20px;
+						}
+						.price {
+							font-size: 22px;
+							margin: 10px 0;
+							display: block;
+						}
+					}
+				}
+
+
+				/* effect standard */
+				&.effect-standard {
+					.add_to_cart_button {
+					}
+				}
+
+				/* on hover */
+				&:hover {
+				}
+			}
+		}
+		&.shop-archive {
+			.isotope-item {
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+/*
+ * Shortcode: clients.scss
+ * -----------------------------------------------
+*/
+
+.tm-sc-clients {
+	.item {
+		padding: 15px 10px;
+		text-align: center;
+		img {
+			@include transition(all .3s);
+		}
+	}
+	&.clients-animation-grayscale {
+		.item {
+			img {
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				opacity: .5;
+			}
+			&:hover {
+				img {
+					-webkit-filter: grayscale(0);
+					filter: grayscale(0);
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&.clients-animation-opacity {
+		.item {
+			img {
+				opacity: .5;
+			}
+			&:hover {
+				img {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&.clients-animation-blur {
+		.item {
+			&:hover {
+				img {
+					-webkit-filter: blur(1px);
+					filter: blur(1px);
+				}
+			}
+		}
+	}
+	&.clients-animation-zoom {
+		.item {
+			img {
+				@include scale(0.95);
+			}
+			&:hover {
+				img {
+					@include scale(1);
+				}
+			}
+		}
+	}
+	&.clients-animation-contrast {
+		.item {
+			&:hover {
+				img {
+					-webkit-filter: contrast(300%);
+					filter: contrast(300%);
+				}
+			}
+		}
+	}
+	&.clients-animation-invert {
+		.item {
+			&:hover {
+				img {
+					-webkit-filter: invert(100%);
+					filter: invert(100%);
+				}
+			}
+		}
+	}
+}

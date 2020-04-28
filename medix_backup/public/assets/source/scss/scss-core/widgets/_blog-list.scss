@@ -1,0 +1,35 @@
+/*
+ * blog-list.scss
+ * -----------------------------------------------
+*/
+.widget {
+	.post {
+		border-bottom: none;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+		.post-thumb {
+			float: left;
+			margin-right: 15px;
+			width: 85px;
+		}
+		.post-title {
+			margin-top: 0;
+			margin-bottom: 5px;
+			font-family: $body-font;
+			a {
+				color: #555;
+				letter-spacing: 0;
+			}
+		}
+		.entry-date {
+			display: block;
+			color: #888f96;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 12px;
+			padding: 4px 0;
+		}
+	}
+}

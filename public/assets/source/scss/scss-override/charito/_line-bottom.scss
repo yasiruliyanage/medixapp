@@ -1,0 +1,29 @@
+/*
+ * Shortcode: line-bottom.scss
+ * -----------------------------------------------
+*/
+.line-bottom-center {
+	position: relative;
+	padding: 15px 0 0 0;
+	margin-bottom: 10px;
+	&:before {
+		bottom: 3px;
+		content: "";
+		height: 1px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		width: 20px;
+	}
+	&:after {
+		bottom: 7px;
+		content: "";
+		height: 1px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		width: 45px;
+	}
+}

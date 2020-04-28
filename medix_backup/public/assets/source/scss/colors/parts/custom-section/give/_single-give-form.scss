@@ -1,0 +1,23 @@
+/*
+ * Shortcode: single-give-form.scss
+ * -----------------------------------------------
+*/
+
+form.give-form input[type="submit"],
+.give_submit,
+.give-btn {
+	background: $theme-color1;
+	&:hover {
+		background: darken( $theme-color1, 5% );
+	}
+}
+.give-donation-levels-wrap {
+	.give-btn {
+		background: #fff;
+		border: 2px solid $theme-color1;
+		color: #333;
+		&:hover {
+			background: darken( $theme-color1, 5% );
+		}
+	}
+}

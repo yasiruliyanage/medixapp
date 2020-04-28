@@ -1,0 +1,29 @@
+/*
+ * portfolio-single.scss
+ * -----------------------------------------------
+*/
+
+body.single-portfolio {
+	.portfolio-single {
+		.portfolio-container {
+			margin-bottom: 60px;
+		}
+		.pre-next-post-link {
+			border-top: 1px solid #eee;
+			padding: 30px 0;
+		}
+		.back-to-portfolio {
+			font-size: 32px;
+		}
+		&.small-image {
+			.portfolio-images img {
+				margin-bottom: 10px;
+			}
+		}
+		&.big-image {
+			.portfolio-images img {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

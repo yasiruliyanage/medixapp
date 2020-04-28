@@ -1,0 +1,67 @@
+/*
+ * portfolio-archive.scss
+ * -----------------------------------------------
+*/
+
+.portfolio-archive {
+	.portfolio-item {
+		.title {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.content {
+			margin-top: 5px;
+		}
+		.category {
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+		.tag {
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+		.date {
+			font-size: 12px;
+		}
+		.entry-meta	{
+			i, a {
+				font-size: 12px;
+			}
+		}
+	}
+	.effect-wrapper {
+		.date {
+			margin-bottom: 0;
+		}
+		ul li {
+			margin-bottom: 0;
+		}
+	}
+	&.portfolio-type-default {
+		.title {
+			margin: 0;
+		}
+	}
+	&.portfolio-type-paris {
+		.entry-meta {
+			margin-top: 10px;
+		}
+		.entry-meta li {
+			margin-top: 0;
+		}
+		.content {
+			margin-top: 0;
+		}
+	}
+	&.portfolio-type-barlin {
+		.entry-meta {
+			margin-top: 10px;
+		}
+		.entry-meta li {
+			margin-top: 0;
+		}
+		.content {
+			margin-top: 0;
+		}
+	}
+}

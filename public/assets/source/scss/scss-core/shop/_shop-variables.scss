@@ -1,0 +1,12 @@
+/**
+ * WooCommerce CSS Variables
+ */
+
+$woo_price_color:	 #77a464;
+
+@mixin woo-dropdown-typo() {
+	color: #666;
+	font-size: 14px;
+	border: 2px solid #e1e1e1;
+	background-color: #fff;
+}

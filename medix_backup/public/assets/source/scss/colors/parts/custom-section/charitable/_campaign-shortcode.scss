@@ -1,0 +1,20 @@
+/*
+ * Shortcode: campaign-shortcode.scss
+ * -----------------------------------------------
+*/
+.tm-sc-charitable-campaigns {
+	.charitable-campaign {
+		.campaign-inner {
+			.campaign-meta {
+				.each-meta {
+					a:hover {
+						color: $theme-color1;
+					}
+					i {
+						color: $theme-color1;
+					}
+				}
+			}
+		}
+	}
+}

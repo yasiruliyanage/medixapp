@@ -1,0 +1,24 @@
+/*
+ * Shortcode: campaign.scss
+ * -----------------------------------------------
+*/
+.campaign .campaign-progress-bar .bar, .campaign .donate-button, 
+.campaign .charitable-donation-form .donation-amount.selected, 
+.campaign .charitable-donation-amount-form .donation-amount.selected {
+	background: $theme-color1;
+}
+.campaign-donation-stats {
+	.donation-goal {
+		.amount {
+			color: $theme-color1;
+		}
+	}
+}
+
+.charitable-campaign {
+	.campaign-entry-meta {
+		i {
+			color: $theme-color1;
+		}
+	}
+}

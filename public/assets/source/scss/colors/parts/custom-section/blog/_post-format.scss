@@ -1,0 +1,16 @@
+/*
+ * blog-single.scss
+ * -----------------------------------------------
+*/
+article {
+	&.format-link {
+		.post-link {
+			background-color: $theme-color1;
+		}
+	}
+	&.format-quote {
+		blockquote {
+			background-color: $theme-color1;
+		}
+	}
+}

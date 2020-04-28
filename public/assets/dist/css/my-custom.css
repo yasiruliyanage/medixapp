@@ -1,0 +1,182 @@
+#hm{
+  display: none;
+}
+::placeholder { /* Crome Firefox  */
+    color: black;
+    text-align: center;
+    font-size: 13px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    text-align: center;
+    font-size: 13px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    text-align: center;
+    font-size: 13px;
+}
+#ftr-pc{
+  text-align: right;
+}
+#ftr-m{
+  display: none;
+}
+.navbar-brand{
+  display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #990000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none!important;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navbar a{
+    font-size: 20px;
+
+}
+
+.navbar li{
+    border-right: 1x solid black;
+}
+
+.navbar li:last-child {
+    border: none;
+}
+
+.sidenav a {
+    border-bottom: 1px solid white;
+}
+
+.sidenav a:last-child {
+    border: none;
+}
+
+.sidenav a:first-child {
+    border: none;
+}
+.navbar-brand  {
+    position: absolute;
+    left: 30%;
+    width: 160px;
+    text-align: center;
+}
+.navbar-brand {float:none;}
+
+@media screen and (max-width: 991px){
+  .important-links{
+    padding-left: 20px;
+  }
+  #ftr-pc{
+    display: none;
+  }
+  #hp{
+    display: none;
+  }
+  #hm{
+    display: block;
+  }
+  #ftr-m{
+    display: block;
+    text-align: center;
+  }
+  #otr{
+      width: 100%;
+      text-align: center!important;
+  }
+ /*  #google_translate_element_pc{
+      display: none;
+  } */
+
+  #mnavb{
+      display: none;
+  }
+  .navbar-brand{
+      display: block!important;
+      text-align:center;
+  }
+  #navbar{
+    padding-left: 10px!important;
+  }
+}
+
+
+@media screen and (max-height: 450px) {
+.sidenav {
+    padding-top: 15px;
+}
+
+.sidenav a {
+    font-size: 18px;
+}
+
+}
+
+@media only screen and (min-width: 991px) {
+
+#siden{
+    display: none;
+}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.navbar-collapse.collapse {
+    display: none !important;
+}
+.navbar-collapse.collapse.in {
+    display: block !important;
+
+}
+.navbar-header .collapse,
+.navbar-toggle {
+    display: block !important;
+}
+.navbar-header {
+    float: none;
+}
+.openbtn {
+    display: block;
+}
+.navbar-brand {
+    display: block;
+}
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+.affix + .container-fluid {
+    padding-top: 70px;
+  }

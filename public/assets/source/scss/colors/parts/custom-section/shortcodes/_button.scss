@@ -1,0 +1,49 @@
+/*
+ * Shortcode: buttons.scss
+ * -----------------------------------------------
+*/
+
+$tm-btn-theme-colors: () !default;
+
+$tm-btn-theme-colors: map-merge(
+	(
+		"theme-colored1":  $theme-color1,
+		"theme-colored2":  $theme-color2,
+	),
+	$tm-btn-theme-colors
+);
+@each $color, $value in $tm-btn-theme-colors {
+	.btn-#{$color} {
+		@include button-variant($value, $value);
+	}
+}
+
+@each $color, $value in $tm-btn-theme-colors {
+	.btn-outline-#{$color} {
+		@include button-outline-variant($value);
+	}
+}
+
+
+.hvr-sweep-to-right,
+.hvr-bounce-to-right,
+.hvr-shutter-out-horizontal {
+	&[class^="btn-outline-"], &[class*=" btn-outline-"] {
+		&:hover, &:focus, &:active {
+			background-color: transparent;
+		}
+		@each $color, $value in $tm-btn-theme-colors {
+			&.btn-outline-#{$color} {
+				&:before {
+					background: $value;
+				}
+			}
+		}
+	}
+}
+
+@each $color, $value in $tm-btn-theme-colors {
+	.btn-#{$color} {
+		color: #fff;
+	}
+}

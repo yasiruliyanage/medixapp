@@ -1,0 +1,19 @@
+/*
+ * Shortcode: charitable-progress-bar.scss
+ * -----------------------------------------------
+*/
+
+.charitable-progress-bar {
+	.progress {
+		.progress-bar {
+			.progress-percentage {
+				border-color: $theme-color1;
+				background-color: $theme-color1;
+				color: #fff;
+				&:after {
+					color: $theme-color1;
+				}
+			}
+		}
+	}
+}

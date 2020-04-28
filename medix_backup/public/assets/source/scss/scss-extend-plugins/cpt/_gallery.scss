@@ -1,0 +1,148 @@
+/*
+ * Shortcode: gallery.scss
+ * -----------------------------------------------
+*/
+.gallery-items-rounded {
+	.effect-wrapper {
+		border-radius: 6px;
+	}
+}
+
+.tm-sc-gallery {
+	.tm-gallery {
+		&.box-hover-effect {
+			display: block;
+			.effect-wrapper {
+				background-color: #b2afab;
+    			border: 1px solid #f3f1f1;
+				.thumb {
+
+				}
+			}
+			&:hover {
+				.effect-wrapper {
+					.thumb {
+						@include scale(0.95);
+					}
+					.overlay-shade {
+						opacity: 0.85;
+						filter: alpha(opacity=70);
+					}
+				}
+			}
+		}
+	}
+	.text-holder {
+		.title {
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		.date,
+		.category {
+			color: #aaa;
+			font-size: 12px;
+		}
+	}
+	.overlay-shade.shade-white + .text-holder {
+		.date,
+		.category {
+			color: #777;
+		}
+	}
+	.overlay-shade.shade-theme-colored1 + .text-holder,
+	.overlay-shade.shade-theme-colored2 + .text-holder {
+		.title,
+		.date,
+		.category {
+			color: #fff;
+		}
+	}
+
+
+	&.gallery-style1-simple {
+		.tm-gallery {
+			.text-holder {
+				text-align: center;
+				width: 100%;
+			}
+			.box-hover-effect {
+				&:hover {
+					.icons-holder-middle {
+						top: 50%;
+						margin-top: -15px;
+					}
+				}
+			}
+		}
+		
+	}
+
+
+	&.gallery-style2-classic {
+		.tm-gallery {
+			.title {
+				margin-bottom: 0;
+			}
+			.category {
+				color: #999;
+				font-size: 14px;
+			}
+		}
+	}
+
+
+	&.gallery-style3-modern {
+		.tm-gallery {
+			@include box-shadow( 0px 0px 50px rgba(5, 5, 5, 0.08) );
+			.details {
+				padding: 20px;
+				background-color: #fff;
+			}
+			.title {
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+			.category {
+				color: #999;
+				font-size: 14px;
+			}
+		}
+	}
+
+
+	&.gallery-style4-current-theme {
+		.tm-gallery {
+			@include box-shadow( 0px 0px 50px rgba(5, 5, 5, 0.08) );
+			.details {
+				padding: 20px;
+				background-color: #DD3333;
+				position: absolute;
+				bottom: 0;
+				opacity: 0;
+				width: 100%;
+				transform: translateY(100px);
+				@include transition(all 0.5s ease);
+				z-index: 11;
+				.title {
+					margin-bottom: 0;
+					margin-top: 0;
+					color: #fff;
+				}
+				.description, .description p {
+					color: #fff;
+					margin-bottom: 0;
+				}
+			}
+			&.box-hover-effect {
+				&:hover {
+					.effect-wrapper {
+						.details {
+							opacity: 1;
+							transform: translateY(0);
+						}
+					}
+				}
+			}
+		}
+	}
+}
