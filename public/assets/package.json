@@ -16,7 +16,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-util": "^3.0.8",
-    "node-sass": "^4.10.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "gulp-concat": "^2.6.1",
